@@ -10,3 +10,7 @@ python2 gridworld.py --agent value --iterations 100 --grid DiscountGrid --discou
 # Passo 7
 python2 gridworld.py --agent q --episodes 50 --noise 0 --grid BridgeGrid --epsilon 1 --learningRate 0.5
 python2 gridworld.py --agent q --episodes 50 --noise 0 --grid BridgeGrid --epsilon 0 --learningRate 0.5
+
+# Passo 8
+python2 pacman.py --pacman PacmanQAgent --numTraining 2000 --numGames 2010 --layout smallGrid
+python2 pacman.py --pacman PacmanQAgent --numGames 10 --layout smallGrid --agentArgs numTraining=10
