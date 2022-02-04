@@ -1,0 +1,5 @@
+# Passo 2
+python2 gridworld.py --agent value --iterations 100 --episodes 10
+
+# Passo 3
+python2 gridworld.py --agent value --iterations 100 --grid BridgeGrid --discount 0.9 --noise 0.2

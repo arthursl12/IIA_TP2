@@ -21,7 +21,7 @@
 
 def passo3():
     answerDiscount = 0.9
-    answerNoise = 0.2
+    answerNoise = 1e-4
     return answerDiscount, answerNoise
 
 
