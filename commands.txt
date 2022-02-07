@@ -14,3 +14,8 @@ python2 gridworld.py --agent q --episodes 50 --noise 0 --grid BridgeGrid --epsil
 # Passo 8
 python2 pacman.py --pacman PacmanQAgent --numTraining 2000 --numGames 2010 --layout smallGrid
 python2 pacman.py --pacman PacmanQAgent --numGames 10 --layout smallGrid --agentArgs numTraining=10
+
+# Passo 9
+python2 pacman.py --pacman ApproximateQAgent --numTraining 2000 --numGames 2010 --layout smallGrid --agentArgs extractor=IdentityExtractor
+python2 pacman.py --pacman ApproximateQAgent --numTraining 50 --numGames 60 --layout mediumGrid --agentArgs extractor=SimpleExtractor
+python2 pacman.py --pacman ApproximateQAgent --numTraining 50 --numGames 60 --layout originalClassic --agentArgs extractor=SimpleExtractor
