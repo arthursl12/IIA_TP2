@@ -209,12 +209,7 @@ class ApproximateQAgent(PacmanQAgent):
         features = self.featExtractor.getFeatures(state, action)
         weights = self.getWeights()
 
-        # Compute dot product and return it
-        # n = len(features); total = 0
-        # for i in range(n):
-        #   total += features[i] * weights[i]
-        # return total
-      
+        # Compute dot product and return it 
         return weights * features
 
     def update(self, state, action, nextState, reward):
